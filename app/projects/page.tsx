@@ -10,7 +10,7 @@ const Sections = [
     'Website Development',
 ]
 
-const SectionStyles = {
+const SectionStyles: Record<string, string> = {
     'All': 'bg-inverse-surface text-surface border border-surface hover:bg-inverse-surface/60',
     'Mobile Apps': 'bg-[#DDEEDB] text-[#166534] border border-[#166534] hover:bg-[#DDEEDB]/60',
     'Website Development': 'bg-[#F7DFD2] text-[#9A3412] border border-[#9A3412] hover:bg-[#F7DFD2]/60',

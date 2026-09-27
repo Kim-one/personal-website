@@ -1,7 +1,7 @@
 import {ArrowRight} from "lucide-react";
 import Link from "next/link";
 
-const Category_Styles = {
+const Category_Styles: Record<string, string> = {
     'All': 'bg-inverse-surface text-surface',
     'Tech': 'bg-[#E7DDF5] text-[#5B21B6]',
     'Building': 'bg-[#DDEEDB] text-[#166534]',

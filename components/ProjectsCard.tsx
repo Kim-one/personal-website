@@ -3,14 +3,14 @@ import {ProjectsData} from "@/data/Products";
 import Image from "next/image";
 import {ArrowRight} from "lucide-react";
 
-const ProdTypesStyles = {
+const ProdTypesStyles: Record<string, string> =  {
     'Personal Project': 'bg-[#E7DDF5] text-[#5B21B6]',
     'Client Work': 'bg-[#DDEEDB] text-[#166534]',
     'Co-op': 'bg-[#F7DFD2] text-[#9A3412]',
     'Externship': 'bg-[#F5EBC7] text-[#854D0E]',
 }
 
-const ProdTypesDot = {
+const ProdTypesDot: Record<string, string> = {
     'Personal Project': 'bg-[#5B21B6]',
     'Client Work': 'bg-[#166534]',
     'Co-op': 'bg-[#9A3412]',

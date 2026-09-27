@@ -1,5 +1,6 @@
 import {ArrowRight} from "lucide-react";
 import Image from "next/image";
+import {JournalEntries} from "@/data/mock-data";
 
 type MonthlyEntryCardProps = {
     entry: typeof JournalEntries[number];
@@ -23,7 +24,7 @@ export const MonthlyEntryCard = ({entry}: MonthlyEntryCardProps) => {
                         {entry.description}
                     </p>
                     <div className={'flex flex-wrap gap-1 mb-space-lg'}>
-                        {entry.techStack.map(techStack => (
+                        {entry.techStack.map((techStack: string)  => (
                             <div key={techStack} className={'rounded-full px-2.5 py-0.5 text-code-sm font-code-sm text-secondary bg-surface-container-low border border-surface-container-highest'}>
                                 {techStack}
                                 {/*Native {'\u00B7'} Expo*/}
