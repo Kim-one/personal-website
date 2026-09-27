@@ -13,7 +13,7 @@ const Categories = [
     'Thoughts'
 ]
 
-const Category_Styles = {
+const Category_Styles : Record<string, string> =  {
     'All': 'bg-inverse-surface text-surface',
     'Tech': 'bg-[#E7DDF5] text-[#5B21B6]',
     'Building': 'bg-[#DDEEDB] text-[#166534]',
@@ -86,7 +86,7 @@ export default function Journal() {
                     <div className={'flex flex-col gap-space-md'}>
                         {sortedEntries.map((journal) => (
                             <JournalEntryCards key={journal.id}
-                                               index={journal.id}
+                                               index={journal.id ?? 0 }
                                                slug={journal.slug}
                                                title={journal.title}
                                                type={journal.type}

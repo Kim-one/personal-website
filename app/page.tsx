@@ -104,7 +104,7 @@ export default function Home() {
                   </div>
                   <div className={'space-y-space-md'}>
                       {JournalEntries.slice(0,3).map((item, index) => (
-                          <JournalEntryCards key={index} date={item.date} page={'home'}
+                          <JournalEntryCards key={index} index={index} date={item.date} page={'home'}
                                              time={item.totalReadTime} techStack={item.techStack}
                                              type={item.type} title={item.title} description={item.description} slug={item.slug}/>
 

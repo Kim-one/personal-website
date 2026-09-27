@@ -1,6 +1,7 @@
 import {JournalEntries} from "@/data/mock-data";
 import {JournalArticles} from "@/components/journal/articles/articles";
 import {ArrowLeft, Bookmark, Link2} from "lucide-react";
+import Link from "next/link";
 
 type Props = {
     params: Promise<{
@@ -15,7 +16,26 @@ export default async function PersonalJournalEntries({params}: Props) {
         (entries) => entries.slug === slug
     );
 
-    const Article = JournalArticles[slug];
+    const Article = JournalArticles[slug as keyof typeof JournalArticles];
+
+    if (!project || !Article) {
+        return (
+            <div className="bg-surface min-h-screen">
+                <div className="max-w-[1120px] mx-auto py-space-2xl">
+                    <h1 className="font-headline-xl text-headline-xl text-on-surface">
+                        Journal entry not found
+                    </h1>
+                    <Link
+                        href="/journal"
+                        className="inline-flex items-center gap-1 mt-space-md text-primary"
+                    >
+                        <ArrowLeft size={14}/>
+                        Back to Journal
+                    </Link>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className={'bg-surface'}>

@@ -2,14 +2,14 @@ import {AreasOfInterest, Principles} from '../../data/mock-data';
 import {GraduationCap, Wrench, Compass, BrainCircuit} from "lucide-react";
 import {CallBack} from "@/components/CallBack";
 
-const Category_Styles = {
+const Category_Styles: Record<string, string> = {
     'Mobile': 'bg-[#E7DDF5] text-[#5B21B6]',
     'Web': 'bg-[#DDEEDB] text-[#166534]',
     'AI & ML': 'bg-[#F7DFD2] text-[#9A3412]',
     'Games': 'bg-[#F5EBC7] text-[#854D0E]',
 }
 
-const CategoryStylesDot = {
+const CategoryStylesDot: Record<string, string> = {
     'Mobile': 'bg-[#5B21B6]',
     'Web': 'bg-[#166534]',
     'AI & ML': 'bg-[#9A3412]',
@@ -26,8 +26,8 @@ export default function AboutPage() {
                         <span className={'relative w-8 bg-outline-variant h-[1px]'}></span>
                         <span className={'text-code-sm text-secondary'}></span>
                     </p>
-                    <h1 className={'text-headline-xl font-headline-xl'}>Hi, I'm Kimone.</h1>
-                    <p className={'text-secondary text-body-md font-body-md'}>I'm a developer who enjoys turning ideas into things people can actually use.</p>
+                    <h1 className={'text-headline-xl font-headline-xl'}>Hi, I&#39;m Kimone.</h1>
+                    <p className={'text-secondary text-body-md font-body-md'}>I&#39;m a developer who enjoys turning ideas into things people can actually use.</p>
                 </section>
                 <section className={'pt-space-xl'}>
                     <div className={'grid grid-cols-12'}>
@@ -42,19 +42,19 @@ export default function AboutPage() {
                                 </p>
                                 <p className={'leading-relaxed font-body-lg text-body-lg'}>
                                     I graduated in 2026 with a degree in Computer Science and Business Administration.
-                                    Studying both gave me a different perspective on technology. I learned hoe to build things,
-                                    but also how to think about people, problems, and ideas behind what I'm building.
+                                    Studying both gave me a different perspective on technology. I learned how to build things,
+                                    but also how to think about people, problems, and ideas behind what I&#39;m building.
                                 </p>
-                                <p className={'text-on-surface-variant'}>These days, I'm figuring out what comes next.</p>
+                                <p className={'text-on-surface-variant'}>These days, I&#39;m figuring out what comes next.</p>
                                 <p className={'leading-relaxed font-body-md text-body-md text-on-surface-variant'}>
-                                    I'm interested in web development, mobile applications, artificial intelligence,
-                                    machine learning, and even game development. I'm more interested in continuing to explore,
+                                    I&#39;m interested in web development, mobile applications, artificial intelligence,
+                                    machine learning, and even game development. I&#39;m more interested in continuing to explore,
                                     build, and see where my curiosity takes me.
                                 </p>
                                 <div className={'bg-surface-container p-space-lg space-y-space-sm rounded-xl border-l-4 border-primary'}>
                                     <p className={'text-primary font-semibold'}>99</p>
                                     <p className={'text-headline-md font-headline-md text-secondary leading-snug'}>
-                                        "I'm more interested in continuing to explore, build, and see where my curiosity takes me."</p>
+                                        I&#39;m more interested in continuing to explore, build, and see where my curiosity takes me.&#34;</p>
                                     <p className={'text-code-sm font-code-sm text-secondary pt-space-xs'}>- Kimone Barrett</p>
                                 </div>
                                 <div className={'grid grid-cols-3 gap-space-md'}>
@@ -62,10 +62,10 @@ export default function AboutPage() {
                                         <p className={'text-secondary uppercase text-label-sm font-label-sm'}>
                                             Education
                                         </p>
-                                        <p>BSc CS & Business '26</p>
+                                        <p>BSc CS & Business &#39;26</p>
                                     </div><div className={'bg-background p-space-lg rounded'}>
                                         <p className={'text-secondary uppercase text-label-sm font-label-sm'}>
-                                            Fcous Area
+                                            Focus Area
                                         </p>
                                         <p>Web {'\u00B7'} Mobile {'\u00B7'} AI</p>
                                     </div>
@@ -125,10 +125,10 @@ export default function AboutPage() {
                     <div className={'p-space-2xl bg-background rounded-xl space-y-space-md'}>
                         <p className={'font-body-lg text-body-lg leading-relaxed text-on-surface-variant'}>My interest in technology has always been closely connected to building things.</p>
                         <p className={'font-body-md text-body-md text-on-surface-variant leading-relaxed'}>
-                            Over the years, I've worked on websites, client projects, and personal experiments that have
-                            allowed me to explore different sides of development. Each projects has taught me something different,
-                            not just about technology, but design, problem solving, collaboration, and what if means to
-                            actually build something fot another person.
+                            Over the years, I&#39;ve worked on websites, client projects, and personal experiments that have
+                            allowed me to explore different sides of development. Each project has taught me something different,
+                            not just about technology, but design, problem solving, collaboration, and what is means to
+                            actually build something for another person.
                         </p>
                         <p className={'font-body-md text-body-md text-on-surface-variant leading-relaxed'}>
                             My experience has taken me from frontend development and UX/UI work to exploring artificial
@@ -168,19 +168,19 @@ export default function AboutPage() {
                                     <h1 className={'text-headline-lg font-headline-lg tracking-tight text-on-surface'}>Beyond the Code</h1>
                                 </div>
                                 <p className={'text-body-lg font-body-lg text-on-surface'}>
-                                    Technology is a big part of what I do, but it isn't all I am.
+                                    Technology is a big part of what I do, but it isn&#39;t all I am.
                                 </p>
-                                <p className={'text-body-md font-cody-md text-secondary leading-relaxed'}>
-                                    I enjoy reading, exploring creative idead, and working on person projects simply because
-                                    I find them interesting. Some of those projects turn into something real, whole others teach me
+                                <p className={'text-body-md font-body-md text-secondary leading-relaxed'}>
+                                    I enjoy reading, exploring creative ideas, and working on personal projects simply because
+                                    I find them interesting. Some of those projects turn into something real, while others teach me
                                     something.
                                 </p>
-                                <p className={'text-body-md font-cody-md text-secondary leading-relaxed'}>
+                                <p className={'text-body-md font-body-md text-secondary leading-relaxed'}>
                                     I am also interested in the creative side of technology, how something looks, how it feels to use,
                                     and how a simple idea can become an experience.
                                 </p>
-                                <p className={'text-body-md font-cody-md text-secondary leading-relaxed'}>
-                                    That's one of the reasons I enjoy having personal projects. They give me room to experiment
+                                <p className={'text-body-md font-body-md text-secondary leading-relaxed'}>
+                                    That&#39;s one of the reasons I enjoy having personal projects. They give me room to experiment
                                     without needing everything to have a perfect purpose.
                                 </p>
                             </div>

@@ -1,13 +1,13 @@
 import {WorkItem} from "@/data/mock-data";
 
-const Category_Styles = {
+const Category_Styles: Record<string, string> =  {
     'Mobile': 'bg-[#E7DDF5] text-[#5B21B6]',
     'Client Work': 'bg-[#DDEEDB] text-[#166534]',
     'Co-op': 'bg-[#F7DFD2] text-[#9A3412]',
     'Externship': 'bg-[#F5EBC7] text-[#854D0E]',
 }
 
-const CategoryStylesDot = {
+const CategoryStylesDot: Record<string, string> =  {
     'Mobile': 'bg-[#5B21B6]',
     'Client Work': 'bg-[#166534]',
     'Co-op': 'bg-[#9A3412]',

@@ -2,6 +2,7 @@ import {products} from "@/data/Products";
 import {ArrowLeft, ArrowUpRight, Terminal} from "lucide-react";
 import {ProjectPages} from "@/components/projects/pages/projects";
 import {ComingSoon} from '@/components/ComingSoon';
+import Link from "next/link";
 
 type Props = {
     params: Promise<{
@@ -13,7 +14,27 @@ export default async function ProjectsPage ({ params}: Props) {
     const project = products.find(
         (project) => project.slug === slug)
 
-    const ProjectPage = ProjectPages[slug];
+    const ProjectPage = ProjectPages[slug as keyof typeof ProjectPages];
+
+    if (!project) {
+        return (
+            <div className="bg-surface min-h-screen">
+                <div className="max-w-[1120px] mx-auto py-space-2xl">
+                    <h1 className="font-headline-xl text-headline-xl text-on-surface">
+                        Project not found
+                    </h1>
+
+                    <Link
+                        href="/projects"
+                        className="inline-flex items-center gap-1 mt-space-md text-primary"
+                    >
+                        <ArrowLeft size={14} />
+                        Back to Projects
+                    </Link>
+                </div>
+            </div>
+        );
+    }
 
     if (!ProjectPage) {
         return (
