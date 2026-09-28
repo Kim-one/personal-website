@@ -9,7 +9,7 @@ import {resumeContent} from "@/data/mock-data";
 export default function Resume(){
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'max-w-[1120px] mx-auto'}>
+            <div className={'lg:max-w-[1120px] max-w-[350px] mx-auto'}>
                 {/*Page Header*/}
                 <section className={'pt-16'}>
                     <p className={'mb-space-md inline-flex items-center gap-space-sm text-code-sm font-code-sm font-semibold tracking-widest uppercase text-primary'}>
@@ -27,8 +27,8 @@ export default function Resume(){
                                 <span className={'font-code-sm text-code-sm text-primary tracking-wider uppercase font-bold'}>
                                     Curated Resume
                                 </span>
-                                    <h1 className={'text-headline-xl font-headline-xl tracking-tight text-on-surface'}>04 / My Journey</h1>
-                                    <p className={'inline-flex items-center font-headline-md text-headline-md text-secondary tracking-tight font-medium gap-1'}>
+                                    <h1 className={'text-headline-xl-mobile font-headline-xl-mobile lg:text-headline-xl lg:font-headline-xl tracking-tight text-on-surface'}>04 / My Journey</h1>
+                                    <p className={'inline-flex flex-wrap items-center font-headline-md text-headline-md text-secondary tracking-tight font-medium gap-1'}>
                                         <span>Kimone Barrett</span>
                                         <span className={'h-[1px] w-8 relative bg-outline-variant'}></span>
                                         <span>Software Developer</span>
@@ -99,7 +99,7 @@ export default function Resume(){
                     </div>
                 </section>
                 <section>
-                    <div className={'grid grid-cols-12 py-space-2xl gap-space-xl items-start'}>
+                    <div className={'grid grid-cols-1 lg:grid-cols-12 py-space-2xl gap-space-xl items-start'}>
                         <div className={'md:col-span-8'}>
                             <div className={'space-y-space-xs pb-space-sm'}>
                                 <div className={'flex items-center gap-space-sm'}>

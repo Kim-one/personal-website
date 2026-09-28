@@ -38,10 +38,10 @@ export const ExperienceCard = ({data}:{data: WorkItem[]}) => {
                                 <span className={`${!item.companyType ? 'hidden' : ''} text-on-surface-variant`}>{item.companyType}</span>
                             </div>
                         </div>
-                        <div className={'bg-surface-container-low lg:hidden text-right px-space-sm py-1.5 rounded-lg sm:block'}>
-                            <span className={'font-code-sm text-[11px] uppercase tracking-wider text-secondary block'}>Production</span>
-                            <span className={'font-label-sm text-label-sm font-semibold text-on-surface'}>Web Platform</span>
-                        </div>
+                        {/*<div className={'bg-surface-container-low text-right px-space-sm py-1.5 rounded-lg'}>*/}
+                        {/*    <span className={'font-code-sm text-[11px] uppercase tracking-wider text-secondary block'}>Production</span>*/}
+                        {/*    <span className={'font-label-sm text-label-sm font-semibold text-on-surface'}>Web Platform</span>*/}
+                        {/*</div>*/}
                     </div>
                     <p className={'font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md'}>
                         {item.jobDescription}

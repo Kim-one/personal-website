@@ -18,9 +18,9 @@ const ProdTypesDot: Record<string, string> = {
 }
 export const ProjectsCard = ({projects}: {projects: ProjectsData}) => (
     <div className={'bg-surface-container-low rounded-xl group'}>
-        <div className={'grid grid-cols-12 '}>
+        <div className={'grid grid-cols-1 lg:grid-cols-12 '}>
             <div className={'col-span-7 p-space-lg'}>
-                <div className={'p-space-lg'}>
+                <div className={'p-space-xs lg:p-space-lg'}>
                     <Image width={1000} height={1000} src={projects.image}
                            className={'rounded-lg object-cover h-full w-full group-hover:scale-[1.015] ease-out transition-transform duration-500'} alt={''}/>
                 </div>

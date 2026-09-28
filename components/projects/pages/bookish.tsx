@@ -48,7 +48,7 @@ export const Bookish = () => {
                     The main idea was to create a simple reading tracker that make managing a physical TBR feel easier. The
                     app is built around three main reading states:
                 </p>
-                <div className={'grid grid-cols-3 gap-space-xl'}>
+                <div className={'grid grid-cols-1 lg:grid-cols-3 gap-space-xl'}>
                     {States.map((state, index) => (
                         <ReadingStatesPrev key={index} title={state.title} description={state.description} status={state.status}/>
                     ))}

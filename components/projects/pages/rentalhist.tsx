@@ -29,7 +29,7 @@ export const Rentalhist = () => {
                 <p className={'text-body-md font-body-md text-on-surface-variant leading-relaxed'}>
                     Some of the areas I've contributed to include:
                 </p>
-                <div className={'grid grid-cols-3 gap-space-md'}>
+                <div className={'grid grid-cols-1 lg:grid-cols-3 gap-space-md'}>
                     {Contributions.map(Contribution => (
                         <div key={Contribution} className={'rounded-lg px-space-lg py-space-sm bg-background font-label-sm text-label-sm shadow-sm'}>
                             {Contribution}

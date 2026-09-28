@@ -14,7 +14,7 @@ const features = [
 ];
 export const FeaturesSection = () => {
     return (
-        <div className={'grid grid-cols-3 gap-space-md'}>
+        <div className={'grid grid-cols-1 lg:grid-cols-3 gap-space-md'}>
             {features.map((feature, index) => (
                 <FeaturesCard key={index} icon={feature.icon} label={feature.label}/>
             ))}

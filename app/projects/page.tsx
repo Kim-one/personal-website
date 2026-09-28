@@ -24,7 +24,7 @@ export default function ProjectsPage() {
         product => activeTab === 'All' || product.type === activeTab)
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'max-w-[1120px] mx-auto'}>
+            <div className={'max-w-[350px] lg:max-w-[1120px] mx-auto'}>
                 <div className={'pt-16'}>
                     <div className={'inline-flex items-center gap-space-sm'}>
                         <h2 className={'text-primary text-code-sm font-code-sm uppercase font-bold'}>01 / Projects</h2>
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
                                 </div>
                             ))}
                         </div>
-                        <div className={'flex items-center gap-space-sm'}>
+                        <div className={'hidden lg:flex items-center gap-space-sm'}>
                             <SquareTerminal size={16} className={'text-primary'}/>
                             <p className={'font-code-sm text-code-sm text-secondary'}>
                                 {filteredProducts.length} visible {filteredProducts.length > 1 ? (<span>works</span>) : (<span>work</span>)}
