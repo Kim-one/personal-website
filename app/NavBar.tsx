@@ -18,7 +18,7 @@ export function NavBar(){
         <nav className={"fixed w-full top-0 left-0 z-50 bg-surface/85 border-b border-surface-container-highest"}>
             <div className={'h-16 lg:max-w-[1120px] max-w-[350px] mx-auto flex items-center justify-between'}>
                 <div className={'flex items-center'}>
-                    <Link href="/" className={'font-headline-md text-label-md uppercase tracking-wider text-on-surface font-semibold hover:text-primary transition-colors duration-150'}>
+                    <Link href="/" onClick={() => setOpenMenuMobile(false)} className={'font-headline-md text-label-md uppercase tracking-wider text-on-surface font-semibold hover:text-primary transition-colors duration-150'}>
                         Kimone Barrett</Link>
                 </div>
                 <div className={`hidden md:flex gap-3`}>
