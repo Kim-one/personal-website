@@ -50,7 +50,7 @@ export default function ProjectsPage() {
                             {Sections.map((section, i) => (
                                 <div key={i}
                                      onClick={() => setActiveTab(section)}
-                                     className={`${activeTab === section ? '' : 'opacity-60'} ${SectionStyles[section]} rounded-full px-3.5 py-1.5 font-bold tracking-tight font-label-md text-label-md hover:cursor-pointer`}>
+                                     className={`${activeTab === section ? '' : 'opacity-60'} ${SectionStyles[section]} rounded-full shadow-sm px-3.5 py-1.5 font-bold tracking-tight font-label-md text-label-md hover:cursor-pointer`}>
                                     {section}
                                 </div>
                             ))}

@@ -34,11 +34,11 @@ export function NavBar(){
                 <div className={'md:hidden relative'}>
                     {!openMenuMobile ?<Menu onClick={() => setOpenMenuMobile(!openMenuMobile)}/> : <X onClick={() => setOpenMenuMobile(!openMenuMobile)}/>}
                     {openMenuMobile && (
-                        <div className={'flex flex-col absolute gap-2 -left-1/2'}>
+                        <div className={'bg-surface shadow-sm rounded-xl flex flex-col gap-3 absolute -left-14 p-space-lg'}>
                             {NavLinks.map(link => {
                                 const isActive = pathName === link.href;
                                 return (
-                                    <Link key={link.href}
+                                    <Link key={link.href} onClick={() => setOpenMenuMobile(!openMenuMobile)}
                                           className={`${isActive ? 'text-primary border-b-2 border-primary' : ''} hover:text-primary-container text-label-md `}
                                           href={link.href}>{link.name}</Link>
                                 )

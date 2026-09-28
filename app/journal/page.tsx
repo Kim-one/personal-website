@@ -56,7 +56,7 @@ export default function Journal() {
                             const isActive = activeCategory === category;
                             return (
                                 <button key={category}
-                                        className={`px-3.5 py-1.5 rounded-full text-label-md font-label-md font-bold tracking-tight transition-opacity ${Category_Styles[category]} ${isActive ? 'opacity-100' : 'opacity-60 hover:opacity-100'}`}
+                                        className={`px-3.5 py-1.5 shadow-sm rounded-full text-label-md font-label-md font-bold tracking-tight transition-opacity ${Category_Styles[category]} ${isActive ? 'opacity-100' : 'opacity-60 hover:opacity-100'}`}
                                         onClick={() => setActiveCategory(category)}>
                                     {category}</button>
                             );

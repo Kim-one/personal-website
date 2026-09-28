@@ -14,7 +14,7 @@ export default function Home() {
           <div className={"lg:max-w-[1120px] max-w-[350px] mx-auto "}>
               {/*Hero Section*/}
               <section className={'lg:pt-16 pt-10'}>
-                  <div className={'flex lg:flex-wrap items-center gap-10 mb-10'}>
+                  <div className={'flex flex-col lg:flex-wrap lg:items-center items-start gap-5 lg:gap-10 mb-10'}>
                       <div className={'inline-flex items-center rounded-full bg-background py-1 px-3 gap-[0.25rem]'}>
                           <span className={'h-2 w-2 bg-primary rounded-full'}></span>
                           <span className={'uppercase text-label-sm font-label-sm text-secondary tracking-wider'}>Based in Canada</span>
@@ -34,13 +34,13 @@ export default function Home() {
                           focused on web development, AI/ML systems, and crafting intentional digital products with clean human ergonomics.
                       </p>
                   </div>
-                  <div className={'mt-10 mb-10 flex gap-5 text-label-md'}>
+                  <div className={'mt-10 mb-10 flex gap-2 lg:gap-5 text-label-md'}>
                       <a href={'/projects'} className={'bg-black hover:bg-primary text-white py-3 px-6 inline-flex items-center gap-1 rounded-md transition-all duration-150 group'}>
-                          <span>View my work</span>
+                          <span className={'whitespace-nowrap'}>View my work</span>
                           <span><ArrowRight size={18} className={'group-hover:translate-x-0.5 transition-transform'}/></span>
                       </a>
                       <a href={'/journal'} className={'bg-white hover:text-primary text-black py-3 px-6 rounded-md group inline-flex items-center gap-1 transition-all duration-150 group'}>
-                          <span>Read my writings</span>
+                          <span className={'whitespace-nowrap'}>Read my writings</span>
                           <span><ArrowRight className={'group-hover:translate-x-0.5 transition-transform'} size={18}/></span>
                       </a>
                   </div>
