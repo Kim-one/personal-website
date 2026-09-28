@@ -52,7 +52,7 @@ export const Explore = () => {
             </CaseStudySection>
 
             <CaseStudySection index={'03'} label={'Features'} title={'Core Features'}>
-                <div className={'grid grid-cols-3 gap-space-md'}>
+                <div className={'grid grid-cols-1 lg:grid-cols-3 gap-space-md'}>
                     {Features.map(feature => (
                         <div key={feature} className={'rounded-lg px-space-lg py-space-sm bg-background font-label-sm text-label-sm shadow-sm'}>
                             {feature}
@@ -72,7 +72,7 @@ export const Explore = () => {
                     It has challenged me to think about more than just individual screens and features. I've had to
                     consider:
                 </p>
-                <div className={'grid grid-cols-3 gap-space-md'}>
+                <div className={'grid grid-cols-1 lg:grid-cols-3 gap-space-md'}>
                     {Concepts.map(concept => (
                         <div key={concept} className={'rounded-lg px-space-lg py-space-sm bg-background font-label-sm text-label-sm shadow-sm'}>
                             {concept}

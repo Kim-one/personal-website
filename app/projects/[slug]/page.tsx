@@ -19,7 +19,7 @@ export default async function ProjectsPage ({ params}: Props) {
     if (!project) {
         return (
             <div className="bg-surface min-h-screen">
-                <div className="max-w-[1120px] mx-auto py-space-2xl">
+                <div className="max-w-[350px] lg:max-w-[1120px] mx-auto py-space-2xl">
                     <h1 className="font-headline-xl text-headline-xl text-on-surface">
                         Project not found
                     </h1>
@@ -44,7 +44,7 @@ export default async function ProjectsPage ({ params}: Props) {
 
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'max-w-[1120px] mx-auto'}>
+            <div className={'max-w-[350px] lg:max-w-[1120px] mx-auto'}>
                 <div className={'pt-16'}>
                     <div className={'flex justify-between group'}>
                         <a href={'/projects'} className={'inline-flex items-center gap-space-xs text-label-md text-on-surface-variant font-label-md hover:text-primary hover:cursor-pointer'}>
@@ -67,7 +67,7 @@ export default async function ProjectsPage ({ params}: Props) {
                         </div>
                     </div>
                     <div className={'mt-space-lg space-y-space-md'}>
-                        <h1 className={'text-headline-xl font-headline-xl'}>{project?.name}</h1>
+                        <h1 className={'md:text-headline-xl md:font-headline-xl text-headline-xl-mobile font-headline-xl-mobile'}>{project?.name}</h1>
                         <p className={'text-body-md font-body-md max-w-xl text-secondary'}>{project?.description}</p>
                         <div className={'flex gap-2 pt-space-xs'}>
                             <a href={`${project?.liveLink}`} target={'_blank'} rel={'noopener noreferrer'}

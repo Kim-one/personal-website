@@ -11,10 +11,10 @@ import {JournalEntries} from "@/data/mock-data";
 export default function Home() {
   return (
       <div className={'w-full bg-surface'}>
-          <div className={"max-w-[1120px] mx-auto "}>
+          <div className={"lg:max-w-[1120px] max-w-[350px] mx-auto "}>
               {/*Hero Section*/}
-              <section className={'pt-16'}>
-                  <div className={'flex flex-wrap items-center gap-10 mb-10'}>
+              <section className={'lg:pt-16 pt-10'}>
+                  <div className={'flex lg:flex-wrap items-center gap-10 mb-10'}>
                       <div className={'inline-flex items-center rounded-full bg-background py-1 px-3 gap-[0.25rem]'}>
                           <span className={'h-2 w-2 bg-primary rounded-full'}></span>
                           <span className={'uppercase text-label-sm font-label-sm text-secondary tracking-wider'}>Based in Canada</span>
@@ -28,9 +28,9 @@ export default function Home() {
                       </div>
                   </div>
                   <div className={'max-w-4xl space-y-5'}>
-                      <h2 className={'text-headline-xl'}>I build software, explore ideas, and document what I learn along the way.</h2>
+                      <h2 className={'text-headline-xl-mobile font-headline-xl-mobile md:text-headline-xl md:font-headline-xl'}>I build software, explore ideas, and document what I learn along the way.</h2>
                       <p className={'text-body-lg max-w-2xl'}>
-                          I'm <strong>Kimone Barrett</strong>, a Computer Science & Business Administration graduate,
+                          I'm <strong className={'font-semibold text-on-surface'}>Kimone Barrett</strong>, a Computer Science & Business Administration graduate,
                           focused on web development, AI/ML systems, and crafting intentional digital products with clean human ergonomics.
                       </p>
                   </div>
@@ -51,7 +51,7 @@ export default function Home() {
                       <span className={'bg-primary h-2 w-2 rounded-full'}></span>
                       <span className={'text-primary text-code-sm font-semibold uppercase tracking-wider'}>Currently</span>
                   </div>
-                  <div className={'grid grid-cols-4 gap-space-md'}>
+                  <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg'}>
                       {mockData.map((item, index) => (
                           <CurrentProjectsCard key={index} status={item.status} name={item.name} slogan={item.slogan}/>
                       ))}
@@ -59,7 +59,7 @@ export default function Home() {
               </section>
               {/*Selected Work*/}
               <section id={'work'} className={'pt-10'}>
-                  <div className={'flex'}>
+                  <div className={'flex flex-col md:flex-row md:items-end justify-between'}>
                       <div className={'flex items-baseline gap-2'}>
                           <span className={'text-display-num text-outline-variant'}>01</span>
                           <h2 className={'uppercase text-headline-lg text-on-surface'}>Selected Work</h2>
