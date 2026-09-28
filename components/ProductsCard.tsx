@@ -8,7 +8,7 @@ export const ProductsCard =
          description,
          category, technologies, index}: { name:string, image:string, description:string, category:string, technologies:string[], index: number}) => {
     return (
-      <div className={`${index < 1 ? 'grid grid-cols-12 ' : 'flex flex-col-reverse '} bg-white rounded-xl shadow-sm group`}>
+      <div className={`${index < 1 ? 'flex flex-col-reverse lg:grid lg:grid-cols-12 ' : 'flex flex-col-reverse '} bg-white rounded-xl shadow-sm group`}>
           <div className={'col-span-5'}>
               <div className={'p-6 flex flex-col justify-between'}>
                   <div className={'space-y-[1rem]'}>

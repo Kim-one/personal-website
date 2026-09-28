@@ -14,7 +14,7 @@ export default function Home() {
           <div className={"lg:max-w-[1120px] max-w-[350px] mx-auto "}>
               {/*Hero Section*/}
               <section className={'lg:pt-16 pt-10'}>
-                  <div className={'flex flex-col lg:flex-wrap lg:items-center items-start gap-5 lg:gap-10 mb-10'}>
+                  <div className={'flex flex-col lg:flex-row items-start gap-5 lg:gap-10 mb-10'}>
                       <div className={'inline-flex items-center rounded-full bg-background py-1 px-3 gap-[0.25rem]'}>
                           <span className={'h-2 w-2 bg-primary rounded-full'}></span>
                           <span className={'uppercase text-label-sm font-label-sm text-secondary tracking-wider'}>Based in Canada</span>
@@ -59,13 +59,13 @@ export default function Home() {
               </section>
               {/*Selected Work*/}
               <section id={'work'} className={'pt-10'}>
-                  <div className={'flex flex-col md:flex-row md:items-end justify-between'}>
+                  <div className={'flex flex-col md:flex-row md:items-end md:justify-between'}>
                       <div className={'flex items-baseline gap-2'}>
                           <span className={'text-display-num text-outline-variant'}>01</span>
                           <h2 className={'uppercase text-headline-lg text-on-surface'}>Selected Work</h2>
                       </div>
                   </div>
-                  <div className={'flex justify-between mb-[4rem]'}>
+                  <div className={'flex flex-col md:flex-row justify-between mb-[2rem] lg:mb-[4rem]'}>
                       <p className={'text-body-md font-body-md text-secondary'}>Thoughtful products crafted for web and mobile.</p>
                       <a href={'/projects'} className={'inline-flex items-center gap-space-xs group text-primary hover:text-on-primary-fixed-variant'}>
                           <span className={'text-label-md font-label-md'}>View archive & experiments ({products.length})</span>
@@ -95,7 +95,7 @@ export default function Home() {
                           <h2 className={'uppercase text-headline-lg text-on-surface'}>Journal</h2>
                       </div>
                   </div>
-                  <div className={'mb-[4rem] flex justify-between'}>
+                  <div className={'mb-[2rem] lg:mb-[4rem] flex flex-col gap-1 md:flex-row justify-between'}>
                       <p className={'text-body-md font-body-md text-secondary'}>Thoughts, experiments, and things I'm learning and building as a software engineer.</p>
                       <a href={`/journal/`} className={'inline-flex items-center gap-1 text-label-md font-label-md text-primary hover:text-on-primary-fixed-variant group'}>
                           View archive & experiments
