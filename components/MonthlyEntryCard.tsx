@@ -9,15 +9,15 @@ type MonthlyEntryCardProps = {
 export const MonthlyEntryCard = ({entry}: MonthlyEntryCardProps) => {
     return (
         <div className={'bg-background border border-surface-container-highest p-space-lg rounded-xl shadow-sm group'}>
-            <div className={'inline-flex items-center gap-2 mb-space-md'}>
-                <span className={'uppercase bg-[#DDEEDB] text-[#166534] border border-[#166534]/15 rounded-full px-3 py-1 shadow-sm text-code-sm font-code-sm'}>
+            <div className={'flex flex-col md:flex-row items-start md:items-center gap-2 mb-space-md'}>
+                <span className={'uppercase bg-[#DDEEDB] text-[#166534] inline-flex flex-nowrap border border-[#166534]/15 rounded-full px-space-sm py-space-xs lg:px-3 lg:py-1 shadow-sm text-code-sm font-code-sm'}>
                     {entry.type} {'\u00B7'} {entry.totalReadTime} min read
                 </span>
                 <span className={'text-secondary text-code-sm font-code-sm uppercase'}>Article of the Month</span>
             </div>
             <div className={'grid grid-cols-1 md:grid-cols-12 gap-space-xl'}>
                 <div className={'lg:col-span-7'}>
-                    <h3 className={'font-headline-xl text-headline-lg text-on-surface leading-tight tracking-tight group-hover:text-primary transition-colors duration-150 mb-space-lg'}>
+                    <h3 className={'font-headline-xl-mobile text-headline-lg-mobile lg:font-headline-xl lg:text-headline-lg text-on-surface leading-tight tracking-tight group-hover:text-primary transition-colors duration-150 mb-space-lg'}>
                         {entry.title}
                     </h3>
                     <p className={'text-body-lg font-body-lg text-secondary leading-relaxed mb-space-lg'}>
