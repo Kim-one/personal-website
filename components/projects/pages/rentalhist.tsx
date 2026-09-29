@@ -7,7 +7,7 @@ const Contributions = [
 
 export const Rentalhist = () => {
     return (
-        <div className={'py-space-2xl space-y-space-2xl'}>
+        <div className={'py-space-md space-y-space-xl lg:py-space-2xl lg:space-y-space-2xl'}>
             <CaseStudySection index={'01'} label={'Overview'} title={'Overview'}>
                 <p className={'text-body-lg font-body-lg leading-relaxed text-on-surface'}>
                     RentalHist is a rental property platform designed to help property owners and managers manage their

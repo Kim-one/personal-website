@@ -14,7 +14,7 @@ const Concepts = [
 
 export const Explore = () => {
     return (
-        <div className={'py-space-2xl space-y-space-2xl'}>
+        <div className={'py-space-md space-y-space-xl lg:py-space-2xl lg:space-y-space-2xl'}>
             <CaseStudySection index={'01'} label={'Motivation'} title={'The Idea'}>
                 <p className={'text-body-md font-body-md text-on-surface leading-relaxed'}>
                     876Explore started with a simple question:
