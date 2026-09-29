@@ -19,7 +19,7 @@ const CategoryStylesDot: Record<string, string> = {
 export default function AboutPage() {
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'max-w-[350px] lg:max-w-[1120px] mx-auto py-space-2xl'}>
+            <div className={'max-w-[350px] lg:max-w-[1120px] mx-auto py-space-md lg:py-space-2xl'}>
                 <section className={'space-y-space-xs'}>
                     <p className={'inline-flex items-center gap-space-sm text-code-sm font-code-sm font-semibold tracking-widest uppercase text-primary'}>
                         03 / The Story

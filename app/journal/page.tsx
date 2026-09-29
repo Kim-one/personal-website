@@ -15,10 +15,12 @@ const Categories = [
 
 const Category_Styles : Record<string, string> =  {
     'All': 'bg-inverse-surface text-surface',
-    'Tech': 'bg-[#E7DDF5] text-[#5B21B6]',
-    'Building': 'bg-[#DDEEDB] text-[#166534]',
-    'Career': 'bg-[#F7DFD2] text-[#9A3412]',
-    'Thoughts': 'bg-[#F5EBC7] text-[#854D0E]',
+    'Tech': 'bg-[#E7DDF5] text-[#5B21B6] border border-[#5B21B6]',
+    'Building': 'bg-[#DDEEDB] text-[#166534] border border-[#166534]',
+    'Career': 'bg-[#F7DFD2] text-[#9A3412] border border-[#9A3412]',
+    'Thoughts': 'bg-[#F5EBC7] text-[#854D0E] border border-[#854D0E]',
+
+//     bg-[#DDEEDB] text-[#166534] border border-[#166534] hover:bg-[#DDEEDB]/60
 }
 
 export default function Journal() {
@@ -40,7 +42,7 @@ export default function Journal() {
 
     return (
         <div className={"w-full bg-surface"}>
-            <div className={"max-w-[350px] lg:max-w-[1120px] mx-auto py-space-2xl "}>
+            <div className={"max-w-[350px] lg:max-w-[1120px] mx-auto py-space-md lg:py-space-2xl"}>
                 <section className={''}>
                     <p className={'mb-space-md inline-flex items-center gap-space-sm text-code-sm font-code-sm font-semibold tracking-widest uppercase text-primary'}>
                         02 / Journal
@@ -56,7 +58,7 @@ export default function Journal() {
                             const isActive = activeCategory === category;
                             return (
                                 <button key={category}
-                                        className={`px-3.5 py-1.5 shadow-sm rounded-full text-label-md font-label-md font-bold tracking-tight transition-opacity ${Category_Styles[category]} ${isActive ? 'opacity-100' : 'opacity-60 hover:opacity-100'}`}
+                                        className={`hover:cursor-pointer px-3.5 py-1.5 shadow-sm rounded-full text-label-md font-label-md font-bold tracking-tight transition-opacity ${Category_Styles[category]} ${isActive ? 'opacity-100' : 'opacity-60 hover:opacity-100'}`}
                                         onClick={() => setActiveCategory(category)}>
                                     {category}</button>
                             );

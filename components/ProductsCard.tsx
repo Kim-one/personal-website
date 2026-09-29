@@ -5,8 +5,9 @@ export const ProductsCard =
     ({
          name,
          image,
+         slug,
          description,
-         category, technologies, index}: { name:string, image:string, description:string, category:string, technologies:string[], index: number}) => {
+         category, technologies, index}: {slug:string, name:string, image:string, description:string, category:string, technologies:string[], index: number}) => {
     return (
       <div className={`${index < 1 ? 'flex flex-col-reverse lg:grid lg:grid-cols-12 ' : 'flex flex-col-reverse '} bg-white rounded-xl shadow-sm group`}>
           <div className={'col-span-5'}>
@@ -22,8 +23,8 @@ export const ProductsCard =
                           ))}
                       </div>
                       <div>
-                          <a href={'#'} className={'font-label-md text-label-md inline-flex items-center gap-space-xs text-primary'}>
-                              View
+                          <a href={`/projects/${slug}`} className={'font-label-md text-label-md font-semibold inline-flex items-center gap-space-xs text-primary'}>
+                              View Case Study
                               <ArrowRight size={14} className={'group-hover:translate-x-1 transition-transform duration-200'} />
                           </a>
                       </div>
