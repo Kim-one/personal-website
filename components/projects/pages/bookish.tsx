@@ -23,7 +23,7 @@ const States = [
 
 export const Bookish = () => {
     return (
-        <div className={'py-space-2xl space-y-space-2xl'}>
+        <div className={'py-space-md space-y-space-xl lg:py-space-2xl lg:space-y-space-2xl'}>
             <CaseStudySection index={'01'} label={'Motivation'} title={'The Idea'}>
                 <p className={'font-body-lg text-body-lg text-on-surface leading-relaxed'}>
                     I love books, but having a large TRB can create a funny problem: sometimes having too many books
