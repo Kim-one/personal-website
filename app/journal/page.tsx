@@ -42,7 +42,7 @@ export default function Journal() {
 
     return (
         <div className={"w-full bg-surface"}>
-            <div className={"max-w-[350px] lg:max-w-[1120px] mx-auto py-space-md lg:py-space-2xl"}>
+            <div className={"max-w-[350px] md:max-w-[750px] lg:max-w-[1120px] mx-auto py-space-md lg:py-space-2xl"}>
                 <section className={''}>
                     <p className={'mb-space-md inline-flex items-center gap-space-sm text-code-sm font-code-sm font-semibold tracking-widest uppercase text-primary'}>
                         02 / Journal

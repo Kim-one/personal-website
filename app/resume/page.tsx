@@ -9,7 +9,7 @@ import {resumeContent} from "@/data/mock-data";
 export default function Resume(){
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'lg:max-w-[1120px] max-w-[350px] mx-auto py-space-md'}>
+            <div className={'lg:max-w-[1120px] md:max-w-[750px] max-w-[350px] mx-auto py-space-md'}>
                 {/*Page Header*/}
                 <section className={'lg:pt-16'}>
                     <p className={'mb-space-md inline-flex items-center gap-space-sm text-code-sm font-code-sm font-semibold tracking-widest uppercase text-primary'}>
@@ -69,7 +69,7 @@ export default function Resume(){
                                 </span>
                                 </div>
                             </div>
-                            <div className={'flex flex-col sm:flex-row lg:flex-col gap-space-sm lg:min-w-[240px] shrink-0 pt-space-xs'}>
+                            <div className={'flex flex-col md:items-center gap-space-sm lg:min-w-[240px] shrink-0 pt-space-xs'}>
                                 <a href={'/resume/Kimone_Barrett_Resume.pdf'}  target={'_blank'} rel={'noopener noreferrer'}
                                    className={'inline-flex items-center gap-space-sm px-space-lg py-space-sm  bg-on-surface text-surface pt-space-xs rounded-lg font-label-md text-label-md hover:bg-primary group'}>
                                     <Download className={'group-hover:translate-y-0.5 transition-transform duration-150'} size={18}/>

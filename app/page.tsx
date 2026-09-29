@@ -12,10 +12,10 @@ import {CallBack} from "@/components/CallBack";
 export default function Home() {
   return (
       <div className={'w-full bg-surface'}>
-          <div className={"lg:max-w-[1120px] max-w-[350px] mx-auto "}>
+          <div className={"max-w-[350px] md:max-w-[750px] lg:max-w-[1120px]  mx-auto "}>
               {/*Hero Section*/}
               <section className={'lg:pt-16 py-space-md'}>
-                  <div className={'flex flex-col lg:flex-row items-start gap-5 lg:gap-10 mb-10'}>
+                  <div className={'flex flex-col md:flex-row items-start gap-5 lg:gap-10 mb-10'}>
                       <div className={'inline-flex items-center rounded-full bg-background py-1 px-3 gap-[0.25rem]'}>
                           <span className={'h-2 w-2 bg-primary rounded-full'}></span>
                           <span className={'uppercase text-label-sm font-label-sm text-secondary tracking-wider'}>Based in Canada</span>
@@ -94,12 +94,13 @@ export default function Home() {
                   <div className={'flex'}>
                       <div className={'flex items-baseline gap-2'}>
                           <span className={'text-display-num text-outline-variant'}>02</span>
-                          <h2 className={'uppercase text-headline-lg text-on-surface'}>Journal</h2>
+                          <h2 className={'uppercase font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface'}>
+                              Journal</h2>
                       </div>
                   </div>
                   <div className={'mb-[2rem] lg:mb-[4rem] flex flex-col gap-1 md:flex-row justify-between'}>
                       <p className={'text-body-md font-body-md text-secondary'}>Thoughts, experiments, and things I'm learning and building as a software engineer.</p>
-                      <a href={`/journal/`} className={'inline-flex items-center gap-1 text-label-md font-label-md text-primary hover:text-on-primary-fixed-variant group'}>
+                      <a href={`/journal/`} className={'inline-flex items-center whitespace-nowrap gap-1 text-label-md font-label-md text-primary hover:text-on-primary-fixed-variant group'}>
                           View archive & experiments
                           <ArrowRight size={16} className={'group-hover:translate-x-0.5 transition-transform'}/>
                       </a>
@@ -119,12 +120,12 @@ export default function Home() {
                           <span className={'text-display-num text-outline-variant'}>03</span>
                           <div>
                               <h2 className={'uppercase text-headline-lg text-on-surface'}>About & Education</h2>
-                              <p className={'mb-[4rem] text-body-md font-body-md text-secondary'}>Intersections of engineering, product logic and craftsmanship.</p>
+                              <p className={'mb-[4rem] hidden md:flex text-body-md font-body-md text-secondary'}>Intersections of engineering, product logic and craftsmanship.</p>
                           </div>
                       </div>
                   </div>
                   <div className={'grid grid-cols-1 lg:grid-cols-12 gap-4'}>
-                      <div className={'col-span-5 space-y-[1.5rem]'}>
+                      <div className={'md:col-span-5 space-y-[1.5rem]'}>
                           <div className={'bg-background rounded-xl p-[2.5rem] space-y-[2.5rem] shadow-sm'}>
                               <h3 className={'text-headline-md text-on-surface'}>Hello, I'm Kimone.</h3>
                               <p className={'text-body-md leading-relaxed text-secondary'}>
@@ -156,7 +157,7 @@ export default function Home() {
                               </div>
                           </div>
                       </div>
-                      <div className={'col-span-7 rounded-xl bg-background p-[2.5rem] space-y-[2.5rem] shadow-sm'}>
+                      <div className={'md:col-span-7 rounded-xl bg-background p-[2.5rem] space-y-[2.5rem] shadow-sm'}>
                           <h3 className={'text-on-surface text-headline-md'}>Experience & Milestones</h3>
                           <div className={'relative space-y-[2.25rem]'}>
                               <div className={'flex items-start gap-[1rem]'}>

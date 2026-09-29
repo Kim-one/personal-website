@@ -2,7 +2,7 @@ import {ArrowUpRight, Download, Mail} from "lucide-react";
 
 export const CallBack = () => {
     return (
-        <div className={'pt-10 bg-white rounded-xl p-6 text-center flex flex-col items-center'}>
+        <div className={'pt-10 bg-white rounded-xl p-6 text-center flex flex-col items-center shadow-sm'}>
             <div className={'space-y-[1rem] mx-auto max-w-2xl'}>
                 <p className={'text-primary tracking-wider uppercase text-code-sm font-semibold'}>Initiate Conversation</p>
                 <h2 className={'text-headline-lg text-on-surface'}>Let's Build something exceptional together.</h2>
