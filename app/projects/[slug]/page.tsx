@@ -19,7 +19,7 @@ export default async function ProjectsPage ({ params}: Props) {
     if (!project) {
         return (
             <div className="bg-surface min-h-screen">
-                <div className="max-w-[350px] lg:max-w-[1120px] mx-auto py-space-2xl">
+                <div className="max-w-[350px] lg:max-w-[1120px] mx-auto py-space-md lg:py-space-2xl">
                     <h1 className="font-headline-xl text-headline-xl text-on-surface">
                         Project not found
                     </h1>

@@ -21,7 +21,7 @@ export default async function PersonalJournalEntries({params}: Props) {
     if (!project || !Article) {
         return (
             <div className="bg-surface min-h-screen">
-                <div className="max-w-[1120px] mx-auto py-space-2xl">
+                <div className="lg:max-w-[1120px] max-w-[350px] mx-auto py-space-md lg:py-space-2xl">
                     <h1 className="font-headline-xl text-headline-xl text-on-surface">
                         Journal entry not found
                     </h1>
@@ -39,7 +39,7 @@ export default async function PersonalJournalEntries({params}: Props) {
 
     return (
         <div className={'bg-surface'}>
-            <div className={'max-w-[1120px] mx-auto'}>
+            <div className={'max-w-[350px] py-space-md lg:py-space-2xl lg:max-w-[1120px] mx-auto'}>
                 <div className={'w-full flex justify-between'}>
                     <div className={'inline-flex items-center gap-1 text-label-sm font-label-sm pt-space-sm'}>
                         <a href={'/journal'} className={'inline-flex items-center gap-1 text-secondary hover:text-primary'}>
@@ -48,16 +48,17 @@ export default async function PersonalJournalEntries({params}: Props) {
                         </a>
                         <p className={'font-code-sm text-code-sm text-on-surface-variant'}>/ 02 Notes</p>
                     </div>
-                    <div>
+                    <div className={'hidden'}>
                         <p>28%</p>
                     </div>
                 </div>
-                <div className={'max-w-3xl mx-auto flex flex-col gap-space-lg mb-space-2xl py-space-2xl'}>
-                    <h1 className={'font-headline-xl text-headline-xl text-on-surface tracking-tight leading-tight'}>{project?.title}</h1>
+                <div className={'max-w-3xl mx-auto flex flex-col gap-space-lg mb-space-md lg:mb-space-2xl py-space-md lg:py-space-2xl'}>
+                    <h1 className={'font-headline-xl-mobile text-headline-xl-mobile lg:font-headline-xl lg:text-headline-xl text-on-surface tracking-tight leading-tight'}>
+                        {project?.title}</h1>
                     <p className={'text-body-lg text-secondary font-body-lg leading-tight'}>{project?.description}</p>
                     <div className={'flex justify-between p-space-md rounded-lg bg-background'}>
-                        <div className={'flex items-center gap-space-sm'}>
-                            <div className={'w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-headline-md font-bold text-sm'}>
+                        <div className={'flex flex-col lg:flex-row items-center gap-space-sm'}>
+                            <div className={'w-10 h-10 rounded-lg bg-surface-container-highest hidden lg:flex items-center justify-center text-primary font-headline-md font-bold text-sm'}>
                                 KB
                             </div>
                             <div>
@@ -73,9 +74,9 @@ export default async function PersonalJournalEntries({params}: Props) {
                                 <Link2 size={18}/>
                                 <span>Share</span>
                             </div>
-                            <div className={'py-1 px-space-md gap-space-sm bg-surface-container-low rounded'}>
-                                <Bookmark size={18}/>
-                            </div>
+                            {/*<div className={'py-1 px-space-md gap-space-sm bg-surface-container-low rounded'}>*/}
+                            {/*    <Bookmark size={18}/>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                     <div>

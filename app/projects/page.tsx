@@ -24,8 +24,8 @@ export default function ProjectsPage() {
         product => activeTab === 'All' || product.type === activeTab)
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'max-w-[350px] lg:max-w-[1120px] mx-auto'}>
-                <div className={'pt-16'}>
+            <div className={'max-w-[350px] py-space-md lg:py-space-2xl lg:max-w-[1120px] mx-auto'}>
+                <div className={'lg:pt-16'}>
                     <div className={'inline-flex items-center gap-space-sm'}>
                         <h2 className={'text-primary text-code-sm font-code-sm uppercase font-bold'}>01 / Projects</h2>
                         <span className={'h-[1px] w-8 bg-outline-variant relative'}></span>
@@ -46,7 +46,7 @@ export default function ProjectsPage() {
                 </section>
                 <section className={'pt-space-xl'}>
                     <div className={'py-6 flex justify-between border-b border-surface-container-highest'}>
-                        <div className={'flex gap-space-md'}>
+                        <div className={'flex flex-nowrap overflow-x-auto items-center gap-space-sm'}>
                             {Sections.map((section, i) => (
                                 <div key={i}
                                      onClick={() => setActiveTab(section)}

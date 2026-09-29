@@ -17,7 +17,7 @@ export const CallBack = () => {
                        target={'_blank'} rel={'noopener noreferrer'}
                     >
                         <Download size={18}/>
-                        <span>DownLoad resume</span>
+                        <span>Download resume</span>
                     </a>
                 </div>
                 <div className={'flex flex-wrap justify-center items-center gap-3 text-label-md text-secondary'}>
