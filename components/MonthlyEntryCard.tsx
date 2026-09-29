@@ -16,7 +16,7 @@ export const MonthlyEntryCard = ({entry}: MonthlyEntryCardProps) => {
                 <span className={'text-secondary text-code-sm font-code-sm uppercase'}>Article of the Month</span>
             </div>
             <div className={'grid grid-cols-1 md:grid-cols-12 gap-space-xl'}>
-                <div className={'lg:col-span-7'}>
+                <div className={'md:col-span-7'}>
                     <h3 className={'font-headline-xl-mobile text-headline-lg-mobile lg:font-headline-xl lg:text-headline-lg text-on-surface leading-tight tracking-tight group-hover:text-primary transition-colors duration-150 mb-space-lg'}>
                         {entry.title}
                     </h3>
@@ -55,7 +55,7 @@ export const MonthlyEntryCard = ({entry}: MonthlyEntryCardProps) => {
                         </div>
                     </div>
                 </div>
-                <div className={"lg:col-span-5 relative w-full flex items-center justify-center"}>
+                <div className={"md:col-span-5 relative w-full flex items-center justify-center"}>
                     <div className={"w-full bg-surface-container-low rounded-xl p-space-md flex items-center justify-center overflow-hidden relative shadow-inner border border-surface-container-highest"}>
                         <div className={"absolute -top-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"}></div>
                         <div className={"relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg bg-surface-container"}>

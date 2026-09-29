@@ -13,7 +13,7 @@ export const Footer = () => {
 
     return (
         <div className={'w-full bg-surface/85 border-t border-surface-container-highest'}>
-            <div className={'h-16 max-w-[350px] lg:max-w-[1120px] mx-auto flex items-center justify-between'}>
+            <div className={'h-16 max-w-[350px] md:max-w-[750px] lg:max-w-[1120px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between'}>
                 <h1 className={'text-code-sm font-code-sm text-on-surface-variant'}>Kimone Barrett 2026</h1>
                 <div className={'flex gap-3'}>
                     {NavLinks.map(link => {

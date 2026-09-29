@@ -39,7 +39,7 @@ export default async function PersonalJournalEntries({params}: Props) {
 
     return (
         <div className={'bg-surface'}>
-            <div className={'max-w-[350px] py-space-md lg:py-space-2xl lg:max-w-[1120px] mx-auto'}>
+            <div className={'max-w-[350px] md:max-w-[750px] py-space-md lg:py-space-2xl lg:max-w-[1120px] mx-auto'}>
                 <div className={'w-full flex justify-between'}>
                     <div className={'inline-flex items-center gap-1 text-label-sm font-label-sm pt-space-sm'}>
                         <a href={'/journal'} className={'inline-flex items-center gap-1 text-secondary hover:text-primary'}>

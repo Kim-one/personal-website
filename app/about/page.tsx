@@ -19,7 +19,7 @@ const CategoryStylesDot: Record<string, string> = {
 export default function AboutPage() {
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'max-w-[350px] lg:max-w-[1120px] mx-auto py-space-md lg:py-space-2xl'}>
+            <div className={'max-w-[350px] md:max-w-[750px] lg:max-w-[1120px] mx-auto py-space-md lg:py-space-2xl'}>
                 <section className={'space-y-space-xs'}>
                     <p className={'inline-flex items-center gap-space-sm text-code-sm font-code-sm font-semibold tracking-widest uppercase text-primary'}>
                         03 / The Story
@@ -51,25 +51,26 @@ export default function AboutPage() {
                                     machine learning, and even game development. I&#39;m more interested in continuing to explore,
                                     build, and see where my curiosity takes me.
                                 </p>
-                                <div className={'bg-surface-container p-space-lg space-y-space-sm rounded-xl border-l-4 border-primary'}>
+                                <div className={'bg-surface-container p-space-lg space-y-space-sm rounded-xl shadow-sm border-l-4 border-primary'}>
                                     <p className={'text-primary font-semibold'}>99</p>
                                     <p className={'text-headline-md font-headline-md text-secondary leading-snug'}>
                                         I&#39;m more interested in continuing to explore, build, and see where my curiosity takes me.&#34;</p>
                                     <p className={'text-code-sm font-code-sm text-secondary pt-space-xs'}>- Kimone Barrett</p>
                                 </div>
-                                <div className={'grid grid-cols-1 lg:grid-cols-3 gap-space-md'}>
-                                    <div className={'bg-background p-space-lg rounded'}>
+                                <div className={'grid grid-cols-1 md:grid-cols-3 gap-space-md'}>
+                                    <div className={'bg-background p-space-lg rounded-xl shadow-sm'}>
                                         <p className={'text-secondary uppercase text-label-sm font-label-sm'}>
                                             Education
                                         </p>
                                         <p>BSc CS & Business &#39;26</p>
-                                    </div><div className={'bg-background p-space-lg rounded'}>
+                                    </div><
+                                    div className={'bg-background p-space-lg rounded-xl shadow-sm'}>
                                         <p className={'text-secondary uppercase text-label-sm font-label-sm'}>
                                             Focus Area
                                         </p>
                                         <p>Web {'\u00B7'} Mobile {'\u00B7'} AI</p>
                                     </div>
-                                    <div className={'bg-background p-space-lg rounded'}>
+                                    <div className={'bg-background p-space-lg rounded-xl shadow-sm'}>
                                         <p className={'text-secondary uppercase text-label-sm font-label-sm'}>
                                             Mindset
                                         </p>
@@ -82,7 +83,7 @@ export default function AboutPage() {
                 </section>
                 <section className={'pt-space-2xl'}>
                     <div className={'space-y-space-md'}>
-                        <div className={'flex flex-col lg:flex-row lg:justify-between md:items-end'}>
+                        <div className={'flex flex-col md:flex-row md:justify-between md:items-end'}>
                             <div className={'flex flex-col gap-space-xs'}>
                                 <p className={'text-secondary text-code-sm font-code-sm'}>03.1 / Focus Area</p>
                                 <p className={'text-headline-lg font-headline-lg text-on-surface tracking-tight'}>What I like Building</p>
@@ -91,9 +92,9 @@ export default function AboutPage() {
                                 Thoughtful interfaces, tactile mobile products, applied intelligence, and interactive worlds.
                             </div>
                         </div>
-                        <div className={'grid grid-cols-1 lg:grid-cols-4 gap-space-lg'}>
+                        <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg'}>
                             {AreasOfInterest.map((interest, index) =>(
-                                <div key={index} className={'bg-background rounded p-space-lg shadow-sm hover:-translate-y-1 transition-transform duration-200 flex flex-col justify-between'}>
+                                <div key={index} className={'bg-background rounded-xl p-space-lg shadow-sm hover:-translate-y-1 transition-transform duration-200 flex flex-col justify-between'}>
                                     <div className={'flex flex-col gap-space-md'}>
                                         <div className={'flex justify-between'}>
                                             <div className={`font-label-sm text-label-sm flex items-center gap-space-sm rounded-full py-1 px-2.5 ${Category_Styles[interest.type]}`}>
@@ -122,7 +123,7 @@ export default function AboutPage() {
                         <p className={'font-code-sm text-code-sm text-secondary'}>03.2 / Path & Perspective</p>
                         <h1 className={'text-headline-lg font-headline-lg text-on-surface'}>My Journey</h1>
                     </div>
-                    <div className={'p-space-2xl bg-background rounded-xl space-y-space-md'}>
+                    <div className={'p-space-2xl bg-background rounded-xl shadow-sm space-y-space-md'}>
                         <p className={'font-body-lg text-body-lg leading-relaxed text-on-surface-variant'}>My interest in technology has always been closely connected to building things.</p>
                         <p className={'font-body-md text-body-md text-on-surface-variant leading-relaxed'}>
                             Over the years, I&#39;ve worked on websites, client projects, and personal experiments that have
@@ -144,11 +145,11 @@ export default function AboutPage() {
                             The foundational instincts and approaches that guide how I tackle problems and build software.
                         </p>
                     </div>
-                    <div className={'grid grid-cols-1 lg:grid-cols-4 gap-space-xl'}>
+                    <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl'}>
                         {Principles.map(principle => {
                             const Icon = principle.icon;
                             return (
-                                <div className={'bg-background p-space-lg space-y-space-md rounded'} key={principle.approach}>
+                                <div className={'bg-background p-space-lg space-y-space-md rounded-xl shadow-sm'} key={principle.approach}>
                                     <div className={'bg-surface-container rounded-lg w-12 h-12 flex items-center justify-center'}>
                                         <Icon size={20}/>
                                     </div>
@@ -160,9 +161,9 @@ export default function AboutPage() {
                     </div>
                 </section>
                 <section className={'pt-space-2xl'}>
-                    <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl'}>
+                    <div className={'grid grid-cols-1 lg:grid-cols-12 gap-space-xl'}>
                         <div className={'lg:col-span-7'}>
-                            <div className={'p-space-xl bg-background space-y-space-md rounded-xl'}>
+                            <div className={'p-space-xl bg-background shadow-sm space-y-space-md rounded-xl'}>
                                 <div>
                                     <p className={'font-code-sm text-code-sm text-on-surface-variant'}>03.4 / Dimensions</p>
                                     <h1 className={'text-headline-lg font-headline-lg tracking-tight text-on-surface'}>Beyond the Code</h1>
@@ -186,7 +187,7 @@ export default function AboutPage() {
                             </div>
                         </div>
                         <div className={'lg:col-span-5 w-full'}>
-                            <div className={'p-space-md sm:p-space-lg md:p-space-xl bg-surface-container rounded-xl w-full'}>
+                            <div className={'p-space-md sm:p-space-lg md:p-space-xl bg-surface-container rounded-xl shadow-sm w-full'}>
                                 <div className={'flex sm:flex-row justify-between items-start sm:items-center gap-space-xs pb-space-lg md:pb-space-xl'}>
                                     <div className={'inline-flex items-center gap-space-xs text-on-surface uppercase text-label-sm font-label-sm'}>
                                         <span className={'w-2 h-2 relative flex shrink-0'}>
@@ -214,7 +215,8 @@ export default function AboutPage() {
                                                 <span>AI/ML</span>
                                             </p>
                                         </div>
-                                    </div><div className={'flex items-start gap-space-sm pb-space-sm border-b border-surface-container-highest'}>
+                                    </div>
+                                    <div className={'flex items-start gap-space-sm pb-space-sm border-b border-surface-container-highest'}>
                                         <Wrench size={18} className={'text-primary shrink-0 mt-0.5'}/>
                                         <div className={'flex flex-col'}>
                                             <p className={'uppercase text-secondary font-label-sm text-label-sm'}>Building</p>

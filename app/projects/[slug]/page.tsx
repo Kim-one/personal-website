@@ -44,7 +44,7 @@ export default async function ProjectsPage ({ params}: Props) {
 
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'max-w-[350px] py-space-md lg:py-space-2xl lg:max-w-[1120px] mx-auto'}>
+            <div className={'max-w-[350px] md:max-w-[750px] py-space-md lg:py-space-2xl lg:max-w-[1120px] mx-auto'}>
                 <div className={''}>
                     <div className={'flex justify-between group'}>
                         <a href={'/projects'} className={'inline-flex items-center gap-space-xs text-label-md text-on-surface-variant font-label-md hover:text-primary hover:cursor-pointer'}>
