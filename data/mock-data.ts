@@ -195,8 +195,8 @@ export const resumeContent: ResumeEntry[] = [
                 company: 'RentalHist',
                 jobTitle: 'Frontend / UX Developer',
                 companyType: 'SaaS Property Management Platform',
-                jobDescription: 'Architectured customer onboarding flows, built interactive occupancy, and revenue analytics dashboards,\n' +
-                    '                and engineered reusable UI components with responsive ergonomics.',
+                jobDescription: `Build and ship core front-end user interfaces using React, translating Figma design systems into pixel-perfect, accessible components, directly aligned with front-end product development and customer-facing UI work.
+                \n Run usability and cross-browser functional tests on React components to ensure high-fidelity adherence with Figma specs and full compatibility, raising release confidence and shortening QA cycles.`,
                 stack: [
                     'React', 'TailwindCSS', 'TypeScript'
                 ]
@@ -207,8 +207,7 @@ export const resumeContent: ResumeEntry[] = [
                 company: 'Millennial Designs',
                 jobTitle: 'Web Developer',
                 companyType: '',
-                jobDescription: `Developed high-conversion client facing website, structured modular design systems,
-                and audited site performance and search accessibility for regional businesses`,
+                jobDescription: `Reviewed client needs, designed and delivered a production website - owning the full product lifecycle from requirements gathering through front-end development, cross-device testing, and deployment. `,
                 stack: [
                     'React', 'TailwindCSS', 'TypeScript', 'SEO Auditing', 'UI Design'
                 ]
@@ -243,10 +242,11 @@ export const resumeContent: ResumeEntry[] = [
                 company: 'Lucas Technologies & Analytics',
                 jobTitle: 'Web Developer Intern',
                 companyType: '',
-                jobDescription: `Developed high-conversion client facing website, structured modular design systems,
-                and audited site performance and search accessibility for regional businesses`,
+                jobDescription: `Upgraded and integrated existing client web products across 26 sites, debugging SQL/MySQL
+                 backend errors with Root Cause Analysis to restore services, demonstrating the upgrade-and-integrate work central to product developer roles.
+                 Designed and built a website inventory reporting system with interactive Power BI dashboards backed by SQL and ASP.NET integration, combining database design, low-code BI tooling, and process visibility for client-facing workflows. `,
                 stack: [
-                    'PowerBI',
+                    'PowerBI','SQL',
                 ]
             },
         ]

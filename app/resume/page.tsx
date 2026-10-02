@@ -9,9 +9,9 @@ import {resumeContent} from "@/data/mock-data";
 export default function Resume(){
     return (
         <div className={'w-full bg-surface'}>
-            <div className={'lg:max-w-[1120px] md:max-w-[750px] max-w-[350px] mx-auto py-space-md'}>
+            <div className={'lg:max-w-[1120px] md:max-w-[750px] max-w-[350px] mx-auto py-space-md lg:py-space-2xl'}>
                 {/*Page Header*/}
-                <section className={'lg:pt-16'}>
+                <section className={''}>
                     <p className={'mb-space-md inline-flex items-center gap-space-sm text-code-sm font-code-sm font-semibold tracking-widest uppercase text-primary'}>
                         04 / My Journey
                         <span className={'relative w-8 bg-outline-variant h-[1px]'}></span>

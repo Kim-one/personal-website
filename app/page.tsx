@@ -101,7 +101,7 @@ export default function Home() {
                   <div className={'mb-[2rem] lg:mb-[4rem] flex flex-col gap-1 md:flex-row justify-between'}>
                       <p className={'text-body-md font-body-md text-secondary'}>Thoughts, experiments, and things I'm learning and building as a software engineer.</p>
                       <a href={`/journal/`} className={'inline-flex items-center whitespace-nowrap gap-1 text-label-md font-label-md text-primary hover:text-on-primary-fixed-variant group'}>
-                          View archive & experiments
+                          View archive & experiments ({JournalEntries.length})
                           <ArrowRight size={16} className={'group-hover:translate-x-0.5 transition-transform'}/>
                       </a>
                   </div>
@@ -136,13 +136,13 @@ export default function Home() {
                                   Whether architecting robust frontend applications for property platforms or experimenting with predictive intelligence,
                                   I treat code as a medium for thoughtful, durable product craft.
                               </p>
-                              <div className={'flex flex-col gap-[0.05rem] pt-[1rem] text-code-sm text-secondary'}>
-                                  <div className={'flex items-center gap-[0.05rem]'}>
+                              <div className={'flex flex-col gap-[0.05rem] text-code-sm text-secondary'}>
+                                  <div className={'flex items-center gap-space-sm'}>
                                       <GraduationCap className={'text-primary'} size={20}/>
                                       <span>BSc. Computer Science & Business Admin  {"\u00B7"} SMU</span>
                                   </div>
-                                  <div className={'flex items-center gap-[0.05rem]'}>
-                                      <Terminal className={'text-primary text-[16px]'}/>
+                                  <div className={'flex items-center gap-space-sm'}>
+                                      <Terminal className={'text-primary'} size={20}/>
                                       <span>Active full stack engineering practitioner</span>
                                   </div>
                               </div>
