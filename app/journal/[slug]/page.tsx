@@ -1,6 +1,6 @@
 import {JournalEntries} from "@/data/mock-data";
 import {JournalArticles} from "@/components/journal/articles/articles";
-import {ArrowLeft, Bookmark, Link2} from "lucide-react";
+import {ArrowLeft, Link2} from "lucide-react";
 import Link from "next/link";
 
 type Props = {

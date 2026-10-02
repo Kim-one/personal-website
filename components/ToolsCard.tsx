@@ -9,7 +9,7 @@ const Titles: Record<string, React.ReactNode> = {
 
 export const ToolsCard = ({title, stack}:{title:string, stack: string[]}) => {
     return (
-        <div className={'bg-surface-container rounded-lg p-[1.5rem]'}>
+        <div className={'bg-surface-container rounded-xl shadow-sm p-[1.5rem]'}>
             <div className="flex items-center gap-2 mb-4">
                 {Titles[title] && (
                     <span className="text-on-surface flex items-center justify-center">

@@ -25,7 +25,7 @@ export default function ProjectsPage() {
     return (
         <div className={'w-full bg-surface'}>
             <div className={'max-w-[350px] md:max-w-[750px] py-space-md lg:py-space-2xl lg:max-w-[1120px] mx-auto'}>
-                <div className={'lg:pt-16'}>
+                <div className={''}>
                     <div className={'inline-flex items-center gap-space-sm'}>
                         <h2 className={'text-primary text-code-sm font-code-sm uppercase font-bold'}>01 / Projects</h2>
                         <span className={'h-[1px] w-8 bg-outline-variant relative'}></span>

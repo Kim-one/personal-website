@@ -24,6 +24,13 @@ interface JournalEntryCardProps {
 }
 
 export const JournalEntryCards = ({index, date, time, type, title, description, slug, techStack, page = 'journal'}:JournalEntryCardProps) => {
+    const dateString = new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+
+
     return (
         <div className={'bg-background border border-surface-container-highest hover:bg-surface-container-low transition-all duration-200 shadow-sm rounded-xl p-space-lg md:p-space-xl group'}>
             <div className={`${page !== 'home' ? 'grid grid-cols-1 md:grid-cols-12 gap-space-md items-start' : ' justify-between'}`}>
@@ -37,7 +44,7 @@ export const JournalEntryCards = ({index, date, time, type, title, description, 
                     </div>
                     <div className={`${page==='home' ? 'flex flex-col gap-2 lg:flex-row justify-between' : ''} font-code-sm text-code-sm text-secondary`}>
                         <div>
-                            <span>{date}</span>
+                            <span>{dateString}</span>
                             <span className={'mx-1'}>{'\u00B7'}</span>
                             <span className={`${page === 'home' ? 'text-primary' : ''} `}>{time} mins read</span>
                         </div>

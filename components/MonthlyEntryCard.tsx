@@ -7,6 +7,11 @@ type MonthlyEntryCardProps = {
 };
 
 export const MonthlyEntryCard = ({entry}: MonthlyEntryCardProps) => {
+    const dateString = new Date(entry.date).toLocaleDateString("en-US",{
+        year: "numeric",
+        month: "long",
+    });
+
     return (
         <div className={'bg-background border border-surface-container-highest p-space-lg rounded-xl shadow-sm group'}>
             <div className={'flex flex-col md:flex-row items-start md:items-center gap-2 mb-space-md'}>
@@ -41,7 +46,7 @@ export const MonthlyEntryCard = ({entry}: MonthlyEntryCardProps) => {
                     <div className={'pt-space-md border-t border-surface-container-highest'}>
                         <div className={'flex flex-wrap items-center justify-between'}>
                             <div className={'flex items-center gap-space-sm text-secondary font-code-sm text-code-sm'}>
-                                <span className={'text-on-surface font-medium'}>September 2026</span>
+                                <span className={'text-on-surface font-medium'}>{dateString}</span>
                                 <span>{'\u00B7'}</span>
                                 <span>By Kimone Barrett</span>
                             </div>

@@ -73,11 +73,11 @@ export default function Journal() {
                 {/*Chronological articles*/}
                 <section className={'w-full pb-4'}>
                     <div className={'max-w-[1120px] mx-auto'}>
-                        <div className={'flex items-center justify-between pb-space-md mb-space-md'}>
+                        <div className={'flex flex-col sm:flex-row sm:items-center sm:justify-between pb-space-md mb-space-md'}>
                             <h3 className={'text-secondary font-semibold tracking-wider uppercase font-label-md text-label-md'}>Chronological Archive</h3>
                             <button type={'button'}
                                     onClick={() => setSortOrder((current) => current === 'newest' ? 'oldest' : 'newest')}
-                                    className={'font-code-sm text-code-sm text-secondary flex items-center gap-2'}>
+                                    className={'font-code-sm text-code-sm text-secondary flex items-center gap-2 sm:self-auto self-start hover:text-primary hover:cursor-pointer'}>
                                 <span>
                                     Sort: {sortOrder === 'newest' ? 'Newest' : 'Oldest'} First
                                 </span>
