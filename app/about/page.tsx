@@ -1,6 +1,7 @@
 import {AreasOfInterest, Principles} from '../../data/mock-data';
 import {GraduationCap, Wrench, Compass, BrainCircuit} from "lucide-react";
 import {CallBack} from "@/components/CallBack";
+import Image from "next/image";
 
 const Category_Styles: Record<string, string> = {
     'Mobile': 'bg-[#E7DDF5] text-[#5B21B6]',
@@ -30,11 +31,24 @@ export default function AboutPage() {
                     <p className={'text-secondary text-body-md font-body-md'}>I&#39;m a developer who enjoys turning ideas into things people can actually use.</p>
                 </section>
                 <section className={'pt-space-xl'}>
-                    <div className={'grid grid-cols-1 lg:grid-cols-12'}>
-                        <div className={'col-span-5'}>
-
+                    <div className={'grid grid-cols-1 gap-space-xl md:grid-cols-12'}>
+                        <div className={'md:col-span-5 flex flex-col gap-space-md'}>
+                            <div className={'relative aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden shadow-sm'}>
+                                <Image src={'/personalPic.jpg'} alt={'Kimone Barrett'} fill priority sizes={'(max-width: 768px) 100vw, 40vw'}
+                                       className={'object-cover object-center'}/>
+                                <div className={'absolute inset-0 bg-gradient-to-t from-on-surface/70 via-on-surface/10 to-transparent opacity-40 pointer-events-none'}></div>
+                                <div className={'absolute bottom-3 left-3 right-3 p-space-sm  bg-surface-container-low/90 backdrop-blur-md rounded-lg'}>
+                                    <div className={'flex items-center gap-2'}>
+                                        <span className={'inline-block bg-primary h-2 w-2 rounded-full'}></span>
+                                        <p className={'tracking-tight font-label-sm text-label-sm text-on-surface'}>Kimone Barrett {'\u00B7'} Halifax, NS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={'font-code-sm text-code-sm text-secondary leading-relaxed px-1'}>
+                                Kimone Barrett - Software Developer based in Canada
+                            </p>
                         </div>
-                        <div className={'col-span-7'}>
+                        <div className={'md:col-span-7'}>
                             <div className={'space-y-space-md text-on-surface'}>
                                 <p className={'flex items-center gap-space-sm text-code-sm font-code-sm font-semibold tracking-widest uppercase text-secondary'}>
                                     <span className={'h-2 w-2 bg-primary rounded-full'}></span>
@@ -62,19 +76,20 @@ export default function AboutPage() {
                                         <p className={'text-secondary uppercase text-label-sm font-label-sm'}>
                                             Education
                                         </p>
-                                        <p>BSc CS & Business &#39;26</p>
+                                        <p className={'font-body-md text-body-md text-on-surface font-medium mt-0.5'}>BSc CS & Business &#39;26</p>
                                     </div><
                                     div className={'bg-background p-space-lg rounded-xl shadow-sm'}>
                                         <p className={'text-secondary uppercase text-label-sm font-label-sm'}>
                                             Focus Area
                                         </p>
-                                        <p>Web {'\u00B7'} Mobile {'\u00B7'} AI</p>
+                                        <p className={'font-body-md text-body-md text-on-surface font-medium mt-0.5'}>
+                                            Web {'\u00B7'} Mobile {'\u00B7'} AI</p>
                                     </div>
                                     <div className={'bg-background p-space-lg rounded-xl shadow-sm'}>
                                         <p className={'text-secondary uppercase text-label-sm font-label-sm'}>
                                             Mindset
                                         </p>
-                                        <p>Curious & Hands-on</p>
+                                        <p className={'font-body-md text-body-md text-on-surface font-medium mt-0.5'}>Curious & Hands-on</p>
                                     </div>
                                 </div>
                             </div>

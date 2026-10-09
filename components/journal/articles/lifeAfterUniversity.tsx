@@ -34,7 +34,7 @@ export const LifeAfterUniversity = () => {
                 <p className={'font-body-md text-body-md text-on-surface-variant'}>
                     Entering the job market as an early-career developer in 2026 requires an honest mental posture. We
                     have all seen the LinkedIn highlight reels: peers landing dream roles in various top companies.
-                    What isn't broadcasted is the the automated rejection emails at 5:00 AM, the coffe chat requests on LinkedIn,
+                    What isn't broadcasted is the the automated rejection emails at 5:00 AM, the coffee chat requests on LinkedIn,
                     and the emotional toll of interviewing for a job position and never hearing back.
                 </p>
                 <p className={'font-body-md text-body-md text-on-surface-variant'}>
