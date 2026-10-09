@@ -78,17 +78,17 @@ export default function Resume(){
                                     </span>
                                 </a>
                                 <div className={'grid grid-cols-3 gap-space-xs'}>
-                                    <a href={'mailto:kimonebarrett16@gmail.com'} className={'flex flex-col items-center justify-center py-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-on-surface transition-colors duration-150'}>
+                                    <a href={'mailto:kimonebarrett16@gmail.com'} className={'flex flex-col items-center justify-center p-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-on-surface transition-colors duration-150'}>
                                         <Mail size={18} />
                                         <span className={'font-code-sm text-[11px] mt-0.5'}>EMail</span>
                                     </a>
                                     <a href={'https://www.linkedin.com/in/kimone-barrett/'} target={'_blank'} rel={'noopener noreferrer'}
-                                       className={'flex flex-col items-center justify-center py-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-on-surface transition-colors duration-150'}>
+                                       className={'flex flex-col items-center justify-center p-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-on-surface transition-colors duration-150'}>
                                         <Share2 size={18} />
                                         <span className={'font-code-sm text-[11px] mt-0.5'}>LinkedIn</span>
                                     </a>
                                     <a href={'https://github.com/Kim-one'} target={'_blank'} rel={'noopener noreferrer'}
-                                       className={'flex flex-col items-center justify-center py-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-on-surface transition-colors duration-150'}>
+                                       className={'flex flex-col items-center justify-center p-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-on-surface transition-colors duration-150'}>
                                         <SquareTerminal size={18}  />
                                         <span className={'font-code-sm text-[11px] mt-0.5'}>Github</span>
                                     </a>

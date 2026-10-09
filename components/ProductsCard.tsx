@@ -31,7 +31,7 @@ export const ProductsCard =
                   </div>
               </div>
           </div>
-          <div className={`${index < 1 ? 'col-span-7' : ''} overflow-hidden relative`}>
+          <div className={`${index < 1 ? 'col-span-7' : 'aspect-video w-full'} overflow-hidden relative`}>
               <Image src={image} alt={name}
                      className={`h-full w-full ${index > 0 ? 'rounded-t-xl' : 'rounded-r-xl'} object-cover object-center group-hover:scale-[1.02] transition-transform duration-500`}
                      width={500} height={500}/>

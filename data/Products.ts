@@ -49,7 +49,7 @@ export const products = [
         category: '',
         description: 'A mobile reading tracker for people who have too may books and no idea what to read next.',
         technologies: ['React Native', 'SQLite'],
-        image: '/projects/rentalHist.png',
+        image: '/projects/mobile_app.png',
         githublink: '',
         liveLink: '',
     },
