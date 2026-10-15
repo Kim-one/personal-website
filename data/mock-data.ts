@@ -55,10 +55,10 @@ export const JournalEntries = [
         status: 'building',
         title: 'Why I chose SQLite for my Mobile Book Tracker',
         slug: 'mobile_app',
-        image: '',
+        image: '/projects/mobile_app.png',
         description: 'A deep dive into offline-first local state architecture, query performance on mobile devices, and why relational storage felt right over plain key-value stores.',
         techStack: ['React Native', 'Expo', 'SQLite'],
-        articleofmonth: '2026-10',
+        articleofmonth: '2026-1',
     },
     {
         id: 2,
@@ -71,7 +71,7 @@ export const JournalEntries = [
         image:'',
         description: 'How my life has been since graduating in 2026.',
         techStack: [],
-        articleofmonth: '2026-03',
+        articleofmonth: '2026-10',
     },
     {
         id: 3,
