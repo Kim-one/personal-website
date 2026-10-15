@@ -20,7 +20,7 @@ export const MonthlyEntryCard = ({entry}: MonthlyEntryCardProps) => {
                 </span>
                 <span className={'text-secondary text-code-sm font-code-sm uppercase'}>Article of the Month</span>
             </div>
-            <div className={'grid grid-cols-1 md:grid-cols-12 gap-space-xl'}>
+            <div className={entry.image ? 'grid grid-cols-1 md:grid-cols-12 gap-space-xl' : ''}>
                 <div className={'md:col-span-7'}>
                     <h3 className={'font-headline-xl-mobile text-headline-lg-mobile lg:font-headline-xl lg:text-headline-lg text-on-surface leading-tight tracking-tight group-hover:text-primary transition-colors duration-150 mb-space-lg'}>
                         {entry.title}
@@ -60,23 +60,25 @@ export const MonthlyEntryCard = ({entry}: MonthlyEntryCardProps) => {
                         </div>
                     </div>
                 </div>
-                <div className={"md:col-span-5 relative w-full flex items-center justify-center"}>
-                    <div className={"w-full bg-surface-container-low rounded-xl p-space-md flex items-center justify-center overflow-hidden relative shadow-inner border border-surface-container-highest"}>
-                        <div className={"absolute -top-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"}></div>
-                        <div className={"relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg bg-surface-container"}>
-                            <Image alt={"MyNextRead Mobile App Showcase Screen Trio"}
-                                 className={"w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"}
-                                 src={'/projects/mobile_app.png'} width={400} height={400}/>
+                {entry.image &&(
+                    <div className={"md:col-span-5 relative w-full flex items-center justify-center"}>
+                        <div className={"w-full bg-surface-container-low rounded-xl p-space-md flex items-center justify-center overflow-hidden relative shadow-inner border border-surface-container-highest"}>
+                            <div className={"absolute -top-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"}></div>
+                            <div className={"relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg bg-surface-container"}>
+                                <Image alt={entry.title}
+                                       className={"w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"}
+                                       src={entry.image} width={400} height={400}/>
+                            </div>
+                            {/*<div className={"absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5 border border-surface-container-highest"}>*/}
+                            {/*    <span className={"relative flex h-2 w-2"}>*/}
+                            {/*        <span className={"animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-30"}></span>*/}
+                            {/*        <span className={"relative inline-flex rounded-full h-2 w-2 bg-primary"}></span>*/}
+                            {/*    </span>*/}
+                            {/*    <span className={"font-code-sm text-code-sm text-on-surface font-medium"}>iOS TestFlight v1.2</span>*/}
+                            {/*</div>*/}
                         </div>
-                        {/*<div className={"absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5 border border-surface-container-highest"}>*/}
-                        {/*    <span className={"relative flex h-2 w-2"}>*/}
-                        {/*        <span className={"animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-30"}></span>*/}
-                        {/*        <span className={"relative inline-flex rounded-full h-2 w-2 bg-primary"}></span>*/}
-                        {/*    </span>*/}
-                        {/*    <span className={"font-code-sm text-code-sm text-on-surface font-medium"}>iOS TestFlight v1.2</span>*/}
-                        {/*</div>*/}
                     </div>
-                </div>
+                )}
             </div>
         </div>
     );
