@@ -47,7 +47,7 @@ export const products = [
         type: 'Mobile Apps',
         prodType: 'Personal Project',
         category: '',
-        description: 'A mobile reading tracker for people who have too may books and no idea what to read next.',
+        description: 'A mobile reading tracker for people who have too many books and no idea what to read next.',
         technologies: ['React Native', 'SQLite'],
         image: '/projects/mobile_app.png',
         githublink: '',

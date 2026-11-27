@@ -51,7 +51,7 @@ export const ProjectsCard = ({project}: {project: ProjectsData}) => (
                             </div>
                             <div className={'pt-space-md border-t border-surface-container-highest'}>
                                 <a href={`/projects/${project.slug}`} className={'flex items-center group gap-space-sm font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors'}>
-                                    View Site
+                                    View Project
                                     <ArrowRight className={'group-hover:translate-x-1 transition-transform duration-200'} size={18}/>
                                 </a>
                             </div>
