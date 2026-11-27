@@ -29,11 +29,20 @@ export default function Home() {
                       </div>
                   </div>
                   <div className={'max-w-4xl space-y-5'}>
-                      <h2 className={'text-headline-xl-mobile font-headline-xl-mobile md:text-headline-xl md:font-headline-xl'}>I build software, explore ideas, and document what I learn along the way.</h2>
-                      <p className={'text-body-lg max-w-2xl'}>
-                          I'm <strong className={'font-semibold text-on-surface'}>Kimone Barrett</strong>, a Computer Science & Business Administration graduate,
-                          focused on web development, AI/ML systems, and crafting intentional digital products with clean human ergonomics.
-                      </p>
+                      <h2 className={'text-headline-xl-mobile font-headline-xl-mobile md:text-headline-xl md:font-headline-xl'}>
+                          I build software, explore ideas, and document what I learn along the way.</h2>
+                      <div className={'text-body-lg max-w-2xl space-y-5'}>
+                          <p>I'm <strong className={'font-semibold text-on-surface'}>Kimone Barrett</strong>,
+                          A Computer Science and Business Administration graduate from Saint Mary's University with a
+                              passion for building technology and exploring new ideas.</p>
+
+                          <p>My interests span software development, web and mobile applications, AI/ML, and digital products.
+                          I enjoy turning ideas into practical solutions, creating intuitive user experiences, and learning
+                              new technologies along the way.<br/></p>
+
+                          <p>I'm always looking for opportunities to collaborate, contribute, solve problems, and
+                              grow as a developer and technology professional.</p>
+                      </div>
                   </div>
                   <div className={'mt-10 mb-10 flex gap-2 lg:gap-5 text-label-md'}>
                       <a href={'/projects'} className={'bg-black hover:bg-primary text-white py-3 px-6 inline-flex items-center gap-1 rounded-md transition-all duration-150 group'}>
@@ -168,7 +177,8 @@ export default function Home() {
                                           <span className={'text-label-sm text-secondary'}>Frontend (React) Developer</span>
                                       </div>
                                       <p className={'text-body-md text-secondary'}>
-                                          Architecting customer onboarding workflows, building responsive tenant dashboards, and refactoring reusable design token component libraries.
+                                          Architecting customer onboarding workflows, building responsive tenant dashboards,
+                                          and refactoring reusable design token component libraries.
                                       </p>
                                   </div>
                               </div>
@@ -180,7 +190,8 @@ export default function Home() {
                                           <span className={'text-label-sm text-secondary'}>Web Developer</span>
                                       </div>
                                       <p className={'text-body-md text-secondary'}>
-                                          Developed client-facing websites, optimized SEO audits, and engineered modern micro-sites for regional businesses.                                      </p>
+                                          Developed client-facing websites, optimized SEO audits, and engineered modern
+                                          micro-sites for regional businesses.</p>
                                   </div>
                               </div>
                               <div className={'flex items-start gap-[1rem]'}>
@@ -191,7 +202,8 @@ export default function Home() {
                                           <span className={'text-label-sm text-secondary'}>Graduate</span>
                                       </div>
                                       <p className={'text-body-md text-secondary'}>
-                                          Completed Bachelor of Science in Computer Science with Business Administration, building foundations in algorithms, database design, and managerial analytics.                                      </p>
+                                          Completed Bachelor of Science in Computer Science with Business Administration,
+                                          building foundations in algorithms, database design, and managerial analytics.</p>
                                   </div>
                               </div>
                               <div className={'flex items-start gap-[1rem]'}>
