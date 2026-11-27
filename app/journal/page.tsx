@@ -53,7 +53,7 @@ export default function Journal() {
                         <h1 className={'text-headline-lg font-headline-lg mb-space-md'}>Writing about technology, things I’m building, and what I’m learning.</h1>
                         <p className={'leading-relaxed font-body-lg text-body-lg text-secondary'}>A collection of personal field notes on software craft, mobile architectures, AI/ML experiments, career transitions, and everything figured out along the way.</p>
                     </div>
-                    <div className={'mb-space-lg flex flex-nowrap overflow-x-auto items-center gap-space-sm'}>
+                    <div className={'mb-space-lg flex flex-nowrap overflow-x-auto items-center gap-space-sm scrollbar-none'}>
                         {Categories.map((category) => {
                             const isActive = activeCategory === category;
                             return (

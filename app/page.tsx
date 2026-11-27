@@ -184,6 +184,17 @@ export default function Home() {
                                   </div>
                               </div>
                               <div className={'flex items-start gap-[1rem]'}>
+                                  <div className={'w-16 shrink-0 text-code-sm text-primary font-semibold pt-1'}>2026</div>
+                                  <div className={'flex-1'}>
+                                      <div className={'flex flex-wrap items-baseline justify-between gap-1'}>
+                                          <div className={'text-label-md text-on-surface font-semibold'}>Saint Mary's University</div>
+                                          <span className={'text-label-sm text-secondary'}>Graduate</span>
+                                      </div>
+                                      <p className={'text-body-md text-secondary'}>
+                                          Completed Bachelor of Science in Computer Science with Business Administration, building foundations in algorithms, database design, and managerial analytics.                                      </p>
+                                  </div>
+                              </div>
+                              <div className={'flex items-start gap-[1rem]'}>
                                   <div className={'w-16 shrink-0 text-code-sm text-primary font-semibold pt-1'}>2025</div>
                                   <div className={'flex-1'}>
                                       <div className={'flex flex-wrap items-baseline justify-between gap-1'}>
@@ -192,17 +203,6 @@ export default function Home() {
                                       </div>
                                       <p className={'text-body-md text-secondary'}>
                                           Implemented machine learning anomaly detection pipelines and fine-tuning architectures for enterprise data sets using Python and scikit-learn.                                      </p>
-                                  </div>
-                              </div>
-                              <div className={'flex items-start gap-[1rem]'}>
-                                  <div className={'w-16 shrink-0 text-code-sm text-primary font-semibold pt-1'}>2025</div>
-                                  <div className={'flex-1'}>
-                                      <div className={'flex flex-wrap items-baseline justify-between gap-1'}>
-                                          <div className={'text-label-md text-on-surface font-semibold'}>Saint Mary's University</div>
-                                          <span className={'text-label-sm text-secondary'}>Graduate</span>
-                                      </div>
-                                      <p className={'text-body-md text-secondary'}>
-                                          Completed Bachelor of Science in Computer Science with Business Administration, building foundations in algorithms, database design, and managerial analytics.                                      </p>
                                   </div>
                               </div>
                           </div>

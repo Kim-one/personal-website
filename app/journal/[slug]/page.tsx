@@ -64,16 +64,17 @@ export default async function PersonalJournalEntries({params}: Props) {
                             <div>
                                 <div className={'flex items-center gap-1.5'}>
                                     <span className={'font-label-md text-label-md text-on-surface font-bold'}>Kimone Barrett</span>
-                                    <span className={'text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm'}>Halifax, NS</span>
+                                    {/*<span className={'text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm'}>Halifax, NS</span>*/}
                                 </div>
                                 <p className={'font-label-sm text-label-sm text-secondary'}>Software Developer {'\u00B7'} Builder</p>
                             </div>
                         </div>
-                        <div className={'flex gap-2'}>
-                            <div className={'flex items-center py-1.5 px-3 gap-space-sm bg-surface-container-low rounded text-label-sm text-on-surface'}>
-                                <Link2 size={18}/>
-                                <span>Share</span>
-                            </div>
+                        <div className={'flex items-center justify-center'}>
+                            <span className={'text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm'}>Halifax, NS</span>
+                            {/*<div className={'flex items-center py-1.5 px-3 gap-space-sm bg-surface-container-low rounded text-label-sm text-on-surface'}>*/}
+                            {/*    <Link2 size={18}/>*/}
+                            {/*    <span>Share</span>*/}
+                            {/*</div>*/}
                             {/*<div className={'py-1 px-space-md gap-space-sm bg-surface-container-low rounded'}>*/}
                             {/*    <Bookmark size={18}/>*/}
                             {/*</div>*/}

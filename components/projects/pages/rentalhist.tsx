@@ -2,7 +2,7 @@ import {CaseStudySection} from "@/components/CaseStudySection";
 
 const Contributions = [
     'Frontend Interface Development', 'Dashboard Interfaces', 'Account and Profile Interfaces',
-    'Bug Fixes and Interface Improvements', 'Accessibilty Improvements',
+    'Bug Fixes and Interface Improvements', 'Accessibility Improvements',
 ]
 
 export const Rentalhist = () => {
