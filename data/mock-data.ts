@@ -58,7 +58,7 @@ export const JournalEntries = [
         image:'',
         description: 'How my life has been since graduating in 2026.',
         techStack: [],
-        articleofmonth: '2026-10',
+        articleofmonth: '2026-11',
     },
 ];
 
@@ -201,7 +201,7 @@ export const resumeContent: ResumeEntry[] = [
                 jobDescription: `Hands-on project sprint exploring real-time rendering, augmented reality shaders, social
                 UX heuristics, and interactive engine systems.`,
                 stack: [
-                    'PowerBI',
+                    'Unreal Game Engine', 'Lens Studio'
                 ]
             },
         ]
