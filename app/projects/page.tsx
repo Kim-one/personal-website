@@ -67,7 +67,7 @@ export default function ProjectsPage() {
                     <div className={'grid grid-cols-1 gap-space-xl'}>
                         {filteredProducts.map((product, i) => (
                             <div key={product.id} style={{top: `${96 + Math.min(i, 5) * 20}px`}} className={'md:sticky rounded-xl overflow-hidden shadow-sm'}>
-                                <ProjectsCard projects={product}/>
+                                <ProjectsCard project={product}/>
                             </div>
                         ))}
                         <div aria-hidden className={'hidden md:block h-[40vh]'}/>

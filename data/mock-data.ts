@@ -49,19 +49,6 @@ const date = new Date();
 export const JournalEntries = [
     {
         id: 1,
-        date: '2026-08-15',
-        totalReadTime: '5',
-        type: 'Tech',
-        status: 'building',
-        title: 'Why I chose SQLite for my Mobile Book Tracker',
-        slug: 'mobile_app',
-        image: '/projects/mobile_app.png',
-        description: 'A deep dive into offline-first local state architecture, query performance on mobile devices, and why relational storage felt right over plain key-value stores.',
-        techStack: ['React Native', 'Expo', 'SQLite'],
-        articleofmonth: '2026-1',
-    },
-    {
-        id: 2,
         date: '2026-09-20',
         totalReadTime: '2',
         type: 'Thoughts',
@@ -72,19 +59,6 @@ export const JournalEntries = [
         description: 'How my life has been since graduating in 2026.',
         techStack: [],
         articleofmonth: '2026-10',
-    },
-    {
-        id: 3,
-        date: '2026-09-27',
-        totalReadTime: '6',
-        type: 'Building',
-        status: '',
-        title: 'Building My First Mobile App for the App store',
-        slug: 'buildingmyfirstmobilappfortheappstore',
-        image:'/projects/mobile_app.png',
-        description: 'What I learned taking an idea from an initial Figma sketch to a real React Native application with offline-first SQLite synchronization, gesture physics, and App Store submission readiness.',
-        techStack: [`React \u00B7 Expo`, 'Offline First SQLite'],
-        articleofmonth: '2026-09',
     },
 ];
 
@@ -114,7 +88,7 @@ export const AreasOfInterest = [
         type: 'Web',
         title: 'Web Applications',
         description: `I enjoy creating interfaces that are both function and thoughtfully designed. 
-        I'm particularly interested in the space in web development where a technically goof application can also feel intuitive 
+        I'm particularly interested in the space in web development where a technically good application can also feel intuitive 
          and enjoyable to use.`,
         techStack: ['React', 'TailwindCSS', 'TypeScript'],
     },
@@ -161,7 +135,7 @@ export const Principles = [
         icon: UserRoundGroup,
     },{
         approach: 'Always Learning',
-        description: `Technology changes constantly, which means there's always something new to learn. I'm confortable
+        description: `Technology changes constantly, which means there's always something new to learn. I'm comfortable
         being a beginner, experimenting, making mistakes, and trying again.`,
         icon: Infinity,
     },

@@ -33,10 +33,10 @@ export function NavBar(){
                         )
                     })}
                 </div>
-                <div className={'md:hidden relative'}>
+                <div className={'md:hidden'}>
                     {!openMenuMobile ?<Menu onClick={() => setOpenMenuMobile(!openMenuMobile)}/> : <X onClick={() => setOpenMenuMobile(!openMenuMobile)}/>}
                     {openMenuMobile && (
-                        <div className={'bg-surface shadow-sm rounded-xl flex flex-col gap-3 absolute -left-14 p-space-lg'}>
+                        <div className={'absolute left-0 bg-surface w-full right-0 top-14 shadow-sm rounded-xl flex flex-col gap-3  p-space-lg'}>
                             {NavLinks.map(link => {
                                 const isActive = pathName === link.href;
                                 return (

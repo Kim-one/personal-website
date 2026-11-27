@@ -26,7 +26,7 @@ export const Bookish = () => {
         <div className={'py-space-md space-y-space-xl lg:py-space-2xl lg:space-y-space-2xl'}>
             <CaseStudySection index={'01'} label={'Motivation'} title={'The Idea'}>
                 <p className={'font-body-lg text-body-lg text-on-surface leading-relaxed'}>
-                    I love books, but having a large TRB can create a funny problem: sometimes having too many books
+                    I love books, but having a large TBR can create a funny problem: sometimes having too many books
                     to choose from makes it harder to decide what to read.
                 </p>
                 <p className={'text-body-md font-body-md text-on-surface-variant leading-relaxed'}>
